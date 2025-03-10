@@ -59,9 +59,12 @@ The main steps involved in this analysis are:
     To run the Azimuth tool, you need to have R installed on your system. You can install R from [here](https://cran.r-project.org/).
 
 - **Install R Libraries**:
-    After installing R, install the necessary R libraries:
+    After installing R, install the necessary R libraries. You can use `devtools` to install the required packages directly from GitHub:
     ```R
-    install.packages(c("Seurat", "Azimuth", "SeuratData", "reticulate"))
+    # Install Seurat, SeuratData, and Azimuth for Seurat v5
+    devtools::install_github("satijalab/seurat", "seurat5")
+    devtools::install_github("satijalab/seurat-data", "seurat5")
+    devtools::install_github("satijalab/azimuth", "seurat5")
     ```
 
 - **Install R Python Integration**:
